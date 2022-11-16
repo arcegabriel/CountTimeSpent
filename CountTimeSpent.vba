@@ -75,3 +75,11 @@ Set oItem = Nothing
 Set oSelection = Nothing
 Set oOLApp = Nothing
 End Sub
+
+Function HoursMsg(TotalMinutes As Long) As String
+Dim iHours As Long
+Dim iMinutes As Long
+iHours = TotalMinutes \ 60
+iMinutes = TotalMinutes Mod 60
+HoursMsg = " (" & iHours & " Hours and " & iMinutes & " Minutes)"
+End Function
