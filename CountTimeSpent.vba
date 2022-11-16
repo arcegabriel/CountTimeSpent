@@ -59,7 +59,7 @@ MsgBoxText = MsgBoxText & vbNewLine & vbNewLine & "Total time spent Tasks: " & v
     If iDuration2 > 60 Then
         MsgBoxText = MsgBoxText & HoursMsg(iDuration2)
     End If
-MsgBoxText = MsgBoxText & vbNewLine & vbNewLine & "Total time spent Meetings+Tasks: " & vbNewLine & iDuration + iDuration2 & " minutes"
+MsgBoxText = MsgBoxText & vbNewLine & vbNewLine & "Total time spent Meetings: " & vbNewLine & iDuration + iDuration2 & " minutes"
     If iDuration2 > 60 Then
         MsgBoxText = MsgBoxText & HoursMsg(iDuration + iDuration2)
     End If
